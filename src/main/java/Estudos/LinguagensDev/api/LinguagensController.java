@@ -32,7 +32,8 @@ public class LinguagensController {
         List<Linguagem> linguagens = repositorio.findAll();
         return linguagens;
     }
-
+    
+    // Conectar Postman para teste desktop 
     @PostMapping("/linguagens")
     public Linguagem NovaLinguagem (@RequestBody Linguagem linguagem){
         Linguagem linguagemSave = repositorio.save(linguagem);
